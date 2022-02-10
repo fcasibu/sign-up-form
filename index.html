@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign up Form</title>
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="left-content">
+        <div class="logo-container flex">
+          <img src="odin-logo.svg" alt="" class="logo-img" />
+          <h1 class="logo-text">ODIN</h1>
+        </div>
+        <a href="https://www.theodinproject.com/"> The Odin Project </a>
+      </div>
+      <div class="right-content flex">
+        <h2 class="info wrapper">
+          This is not a real online service! You know you need something like this in your life to
+          help you realize your deepest dreams. Sign up now to get started.
+          <br /><br /><span>You <em>know</em> you want to.</span>
+        </h2>
+        <form action="" class="flex">
+          <div class="form-container">
+            <h3>Let's do this!</h3>
+            <div class="row flex">
+              <div class="col">
+                <label for="first-name">First Name</label>
+                <input type="text" name="lastName" id="first-name" />
+              </div>
+              <div class="col">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="firstName" id="last-name" />
+              </div>
+            </div>
+            <div class="row flex">
+              <div class="col">
+                <label for="email">Email <span>*</span></label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="col">
+                <label for="phone-number">Phone Number <span>*</span></label>
+                <input
+                  type="tel"
+                  name="phoneNumber"
+                  id="phone-number"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                  placeholder="123-456-789"
+                  maxlength="11"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row flex">
+              <div class="col">
+                <div class="password-info"></div>
+                <label for="password">Password <span>*</span></label>
+                <input type="password" name="password" id="password" minlength="8" required />
+              </div>
+              <div class="col">
+                <div class="password-match"></div>
+                <label for="confirm-password">Confirm Password <span>*</span></label>
+                <input
+                  type="password"
+                  name="confirmPassword"
+                  id="confirm-password"
+                  minlength="8"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="submit-box">
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
