@@ -175,12 +175,12 @@ input[type="password"] {
   top: -50%;
 }
 
-input[type="password"]:valid {
+input[required]:valid {
   position: relative;
   border: 2px solid lightseagreen;
 }
 
-input[type="password"]:invalid {
+input[required]:invalid {
   position: relative;
   border: 2px solid red;
 }
